@@ -1,0 +1,65 @@
+.posicao {
+    position: absolute;
+    align-items: center;
+}
+/* Estilizando o tabuleiro */
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 640px;
+    height: 640px;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+#jogador1 {
+    background-color: black;
+    color:aliceblue;
+}
+
+
+#jogador2 {
+    background-color: red;
+    color:aliceblue;
+}
+
+.jogadorSelecionado {
+    border: 5px solid green;
+}
+
+/* Estilizando as casas do tabuleiro */
+.casa {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preta {
+    background-color: #8B4513;
+}
+
+.branca {
+    background-color: #F5F5F5;
+}
+
+/* Estilizando as peças */
+.peca {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.peca.vermelha {
+    background-color: red;
+}
+
+.peca.preta {
+    background-color: black;
+}
+.peca.selecionada {
+    border: solid green 5px;
+}
